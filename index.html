@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elige tu destino</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1 class="title">Elige tu destino</h1>
+      <p class="subtitle">Uno de los caminos te llevará a la gloria... ¿te atreves a probar tu suerte?</p>
+    </header>
+
+    <!-- Sección de botones de elección -->
+    <section class="buttons-container" id="choicesContainer">
+      <button id="redBtn" class="destiny-btn btn-red" type="button" aria-label="Elegir botón rojo">
+        <span class="btn-icon">🔴</span>
+        <span class="btn-text">Rojo</span>
+      </button>
+
+      <button id="blueBtn" class="destiny-btn btn-blue" type="button" aria-label="Elegir botón azul">
+        <span class="btn-icon">🔵</span>
+        <span class="btn-text">Azul</span>
+      </button>
+    </section>
+
+    <!-- Sección de resultado y reinicio -->
+    <section class="result-container hidden" id="resultContainer" aria-live="polite">
+      <div class="result-badge" id="resultIcon">🎉</div>
+      <h2 class="result-message" id="resultMessage">Has ganado</h2>
+      <button id="resetBtn" class="reset-btn" type="button">
+        <span class="reset-icon">🔄</span> Volver a jugar
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
